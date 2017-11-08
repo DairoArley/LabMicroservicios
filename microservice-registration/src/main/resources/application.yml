@@ -1,0 +1,23 @@
+spring:
+    application:
+        name: microservice-reservation
+    fremaker:
+        enabled: false
+    thymleaf:
+        cache: false
+        prefix: classpath:/templates
+    h2:
+        console:
+            enabled: true
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1111/eureka
+        healthCheck:
+            enabled: true
+    instance:
+        leaseRenewalIntervalInSeconds: 1
+        leaseInspirationDurationInSeconds: 2
+server:
+    port: 2222
+            
